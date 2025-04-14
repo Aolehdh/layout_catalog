@@ -1,7 +1,7 @@
 html {
-  --main-color: #00acdc;
-  --text-accent-color: #060b35;
-  --text-secondary-color: #616070;
+  $main-color: #00acdc;
+  $text-accent-color: #060b35;
+  $text-secondary-color: #616070;
 
   font-family: Roboto, sans-serif;
   font-size: 10px;
@@ -11,6 +11,11 @@ html {
 
 body {
   margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -70,11 +75,11 @@ body {
 }
 
 .nav__link:hover {
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .nav__link.is-active {
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .nav__link.is-active::after {
@@ -86,7 +91,7 @@ body {
 
   height: 4px;
   border-radius: 2px;
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .cards {
@@ -118,7 +123,7 @@ body {
   border: 1px solid #f3f3f3;
   border-radius: 5px;
   padding: 32px 16px 16px;
-  background: #fff;
+  background: white;
   transition: transform 0.3s ease;
 }
 
@@ -138,7 +143,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  color: var(--text-accent-color);
+  color: $text-accent-color;
 }
 
 .card__title:hover {
@@ -157,7 +162,7 @@ body {
 }
 
 .card__review-count {
-  color: var(--text-accent-color);
+  color: $text-accent-color;
 }
 
 .card__price-container {
@@ -176,7 +181,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
-  color: var(--text-accent-color);
+  color: $text-accent-color;
 }
 
 .card__buy {
@@ -186,22 +191,22 @@ body {
 
   box-sizing: border-box;
   height: 40px;
-  border: 1px solid var(--main-color);
+  border: 1px solid $main-color;
   border-radius: 5px;
 
   font-size: 14px;
   line-height: 16px;
-  color: #fff;
+  color: white;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
 
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .card__buy:hover {
   color: var(--main-color);
-  background-color: #fff;
+  background-color : white;
 }
 
 .stars {
