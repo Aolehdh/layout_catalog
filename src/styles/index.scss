@@ -1,6 +1,4 @@
-$main-color: #00acdc;
-$text-accent-color: #060b35;
-$text-secondary-color: #616070;
+@import 'variables';
 
 html {
   font-family: Roboto, sans-serif;
@@ -23,7 +21,6 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
